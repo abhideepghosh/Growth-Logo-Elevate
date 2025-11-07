@@ -1,0 +1,145 @@
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #060606;
+}
+
+#root {
+  min-height: 100vh;
+  max-width: none;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+@keyframes star-enter {
+  0% {
+    transform: translate(-100px, -100px) rotate(0deg) scale(0.2);
+    opacity: 0.2;
+  }
+  100% {
+    transform: translate(0, 0) rotate(180deg) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fill-diagonal {
+  0% {
+    transform: scaleX(0) scaleY(0.2);
+    transform-origin: bottom left;
+  }
+  100% {
+    transform: scaleX(1) scaleY(1);
+    transform-origin: bottom left;
+  }
+}
+
+@keyframes draw-line {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.animate-draw-line {
+  animation: draw-line 1s ease-out forwards;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dasharray: 0 300;
+  }
+  100% {
+    stroke-dasharray: 300 0;
+  }
+}
+
+@keyframes fill-area {
+  0% {
+    fill-opacity: 0;
+  }
+  80% {
+    fill-opacity: 0;
+  }
+  100% {
+    fill-opacity: 1;
+  }
+}
+
+.animate-draw {
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  animation: draw 2s ease forwards;
+}
+
+.animate-draw-line {
+  animation: draw 2s ease forwards;
+  transform-origin: left;
+}
+
+.animate-fill-area {
+  animation: fill-area 2.5s ease forwards;
+}
+
+@keyframes text-appearance {
+  0% {
+    transform: translate(0px, 10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+}
+
+@keyframes move-up {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(0px, -20px);
+  }
+}
+
+
+
