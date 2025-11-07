@@ -11,4 +11,4 @@
     - ESLint (project includes ESLint config files)
 
  ## Live Link
-    [Growth-Elevate](https://growth-logo-elevate.vercel.app/)
+    (Growth-Elevate)[https://growth-logo-elevate.vercel.app/]
